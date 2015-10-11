@@ -28,5 +28,5 @@
 #| Funkcja new.odd odpowiada funkcji odd (czyli sprawdza czy podana liczba n jest nieparzysta |#
 (define (new.odd? n) (if (zero? n) #f (if (new.odd? (- n 1)) #f #t)))
 
-#| Funkcja new.even odpowiada funkcji even (czyli sprawdza czy podana liczba n jest parzysta |#
+#| Funkcja new.even odpowiada funkcji even (czyli sprawdza czy podana liczba n jest parzysta) |#
 (define (new.even? n) (if (zero? n) #t (if (new.even? (- n 1)) #f #t))) 
