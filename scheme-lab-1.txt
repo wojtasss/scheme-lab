@@ -1,0 +1,32 @@
+#|  Kod pisany i testowany na stronie http://www.tutorialspoint.com/execute_scheme_online.php |#
+
+#| ZAD 2 |#
+#| Funkcja ułatwiająca wyświetlanie wyników w konsoli na stronie podanej wyżej |#
+(define (disp x)(display x)(newline))
+
+#| Funkcja obliczająca największy wspólny dzienik dwóch liczb naturalnych a i b |#
+(define (nwd a b)(if (not (= a b)) (if (> a b) (nwd (- a b) b) (if (< a b) (nwd a (- b a)))) a))
+
+#| Funkcja obliczająca największą wspólną wielokrotoność dwóch liczb naturalnych a i b |#
+(define (nww a b)(if (not (= b 0)) (nww b (modulo a b)) a))
+
+#| ZAD 3 |#
+#| Definicje funkcji, które trzeba było napisać na podstawie zadania na stronie |#
+
+(define (new.< x y)(if (< x y) x y))
+(define (new.> x y)(if (< x y) y x))
+(define (new.= x y)(if (< x y) #f (if (< y x) #f #t)))
+(define (new.<= x y)(if (new.= x y) #t (if (< x y) #t #f)))
+(define (new.>= x y)(if (new.= x y) #t (if (< x y) #f #t)))
+(define (new.<> x y)(if (new.= x y) #f #t))
+
+#| ZAD 4 |#
+
+(define (same-values? p1 p2 x y)(if (or (and (not (p1 x y)) (not (p2 x y))) (and (p1 x y) (p2 x y))) #t #f))
+
+#| ZAD 5 |#
+#| Funkcja new.odd odpowiada funkcji odd (czyli sprawdza czy podana liczba n jest nieparzysta |#
+(define (new.odd? n) (if (zero? n) #f (if (new.odd? (- n 1)) #f #t)))
+
+#| Funkcja new.even odpowiada funkcji even (czyli sprawdza czy podana liczba n jest parzysta |#
+(define (new.even? n) (if (zero? n) #t (if (new.even? (- n 1)) #f #t))) 
