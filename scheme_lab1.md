@@ -29,3 +29,6 @@ Proszę napisać rekurencyjną oraz iteracyną funkcję (fib n), która obliczy 
 ```scheme
 (define (fib x)(cond ((= x 0) 0) ((= x 1) 1) (else (+ (fib (- x 1)) (fib (- x 2))))))
 ```
+###Zadanie 7
+Proszę napisać rekurencyjną oraz iteracyjną funkcję (exp b e) na podstawie tej właściwości. Używając model środowiska, proszę pokazywać, jak wyrażenie (exp 2 6) zostaje ewaluowane. 
+* Rekurencyjnie
