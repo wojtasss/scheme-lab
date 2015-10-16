@@ -24,3 +24,8 @@ Proszę napisać funkcje (odd? n) oraz (even? n), które sprawdzają, czy liczba
 (define (new.odd? n) (if (zero? n) #f (if (new.odd? (- n 1)) #f #t)))       #| funkcja new.odd  |#
 (define (new.even? n) (if (zero? n) #t (if (new.even? (- n 1)) #f #t)))     #| funkcja new.even |#
 ```
+###Zadanie 6
+Proszę napisać rekurencyjną oraz iteracyną funkcję (fib n), która obliczy n-tą liczbę Fibonacci. 
+```scheme
+(define (fib x)(cond ((= x 0) 0) ((= x 1) 1) (else (+ (fib (- x 1)) (fib (- x 2))))))
+```
