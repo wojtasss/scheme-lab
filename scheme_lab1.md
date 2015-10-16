@@ -32,3 +32,9 @@ Proszę napisać rekurencyjną oraz iteracyną funkcję (fib n), która obliczy 
 ###Zadanie 7
 Proszę napisać rekurencyjną oraz iteracyjną funkcję (exp b e) na podstawie tej właściwości. Używając model środowiska, proszę pokazywać, jak wyrażenie (exp 2 6) zostaje ewaluowane. 
 * Rekurencyjnie
+```scheme
+(define (exp b e)(if (= e 1) b (square (exp b (/ e 2)))))
+```
+* Iteracyjnie
+```scheme
+```
