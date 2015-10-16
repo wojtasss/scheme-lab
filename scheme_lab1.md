@@ -35,6 +35,13 @@ Proszę napisać rekurencyjną oraz iteracyjną funkcję (exp b e) na podstawie 
 ```scheme
 (define (exp b e)(if (= e 1) b (square (exp b (/ e 2)))))
 ```
+Proces ewaluacji (rekurencja)
+
+![Proces ewaluacji](http://paczaizm.pl/content/wp-content/uploads/dobra-dawaj-bit-robert-lewandowski-z-mikrofonem.jpg)
 * Iteracyjnie
 ```scheme
 ```
+Proces ewaluacji (iteracja)
+
+![Proces ewaluacji](http://paczaizm.pl/content/wp-content/uploads/dobra-dawaj-bit-robert-lewandowski-z-mikrofonem.jpg)
+
